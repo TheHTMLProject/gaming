@@ -1,61 +1,31 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html lang="en">
 <head>
     <link rel="icon" href="https://assets.thehtmlproject.com/icon.jpeg">
-    <meta name="robots" content="noindex, follow" />
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armed Forces .io - Games - The HTML Project</title>
-    <style>
-        .container {
-            display: flex;
-            justify-content: center;
-        }
-        .footer {
-            position: sticky;
-            top: 0;
-            width: 20%;
-            background-color: grey;
-            color: white;
-            text-align: center;
-        }
-        .game {
-            width: 90%;
-        }
-    </style>
+    <link rel="stylesheet" href="https://assets.thehtmlproject.com/css/gaming/page/style.css">
 </head>
 <body>
     <h2>Armed Forces .io</h2>
+
     <div class="container">
-        <!-- iframe Game -->
         <div class="game">
-            <iframe class="gm-iframe" id="gm-area" src="https://classroomjq.github.io/class276223/armedforces/" width="1070" height="540" scrolling="none" frameborder="0" allowfullscreen></iframe>
-            <div style="padding-top: 10px;"> 
-                <button class="btn theme-btn-1 btn-effect-1 text-uppercase" onclick="openFullscreen();">Full Screen</button>
+            <div class="iframe-container">
+                <iframe id="gm-area" src="https://classroomjq.github.io/class276223/armedforces/" allowfullscreen></iframe>
             </div>
-            <script>
-                var elem = document.getElementById("gm-area");
-                function openFullscreen() {
-                    if (elem.requestFullscreen) {
-                        elem.requestFullscreen();
-                    } else if (elem.webkitRequestFullscreen) { /* Safari */
-                        elem.webkitRequestFullscreen();
-                    } else if (elem.msRequestFullscreen) { /* IE11 */
-                        elem.msRequestFullscreen();
-                    }
-                }
-            </script>
-            <p>
-Mysterious Playingcards007
-</p>
+            <button onclick="openFullscreen();">Full Screen</button>
+            <p>Mysterious Playingcards007</p>
         </div>
-        <!-- End iframe Game -->
-        <!-- Footer -->
+
         <div class="footer">
-            <p><a href="index.html" style="color: white;">Back to Dashboard</a></p>
-           
+            <p><a href="/">Back to Game Dashboard</a></p>
+            <p><a href="https://assets.thehtmlproject.com/links/reportabug.html">Report Bug</a></p>
         </div>
-        <!-- End Footer -->
     </div>
+
+    <script src="https://assets.thehtmlproject.com/script/gaming/page/script.js"></script>
 </body>
 </html>
